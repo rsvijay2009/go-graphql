@@ -28,7 +28,7 @@ Follow the steps to run the application
 
 - Run the below command to import the database
 
-`mysql -u username -p database_name < db_scripts.sql`
+  `mysql -u username -p database_name < db_scripts.sql`
 
 - Run `./run.sh`
 
