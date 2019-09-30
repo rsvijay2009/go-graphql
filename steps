@@ -1,0 +1,19 @@
+source : https://gqlgen.com/getting-started/
+
+1. mkdir go-graphql
+
+2. created schema.graphql
+
+3. go run github.com/99designs/gqlgen init
+
+4. create run.sh & chmod +x run.sh
+
+5. add data for users in resolver.go
+
+6. add data for CreateUser in resolver.go
+
+7. since we have a new field "Password" and we don't modifiy User in models_gen.go
+
+8. override the models_gen.go
+
+9. 
