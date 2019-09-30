@@ -7,6 +7,17 @@ If you are wanting to build and develop this, you will need the following items 
 - Go version 1.12+
 - MySql server
 
+# Install the dependencies
+
+```
+go get -u "github.com/99designs/gqlgen/handler"
+
+go get -u "github.com/go-sql-driver/mysql"
+
+go get -u "github.com/vektah/gqlparser"
+
+```
+
 # Up and running
 
 Follow the steps to run the application

@@ -1,10 +1,11 @@
 package main
 
 import (
-	go_graphql "go-graphql"
 	"log"
 	"net/http"
 	"os"
+
+	go_graphql "github.com/rsvijay2009/go-graphql"
 
 	"github.com/99designs/gqlgen/handler"
 )

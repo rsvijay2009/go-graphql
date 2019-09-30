@@ -2,7 +2,7 @@ package go_graphql
 
 import (
 	"context"
-) // THIS CODE IS A STARTING POINT ONLY. IT WILL NOT BE UPDATED WITH SCHEMA CHANGES.
+)
 
 // Resolver struct
 type Resolver struct{}
