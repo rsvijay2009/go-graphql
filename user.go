@@ -19,7 +19,7 @@ type User struct {
 func GetAllUsers() ([]*User, error) {
 	var result []*User
 
-	rows, err := DB.Query("SELECT id, first_name, last_name, email, password, created_at, updated_at FROM `graphql_users`")
+	rows, err := DB.Query("SELECT id, first_name, last_name, email, password, created_at, updated_at FROM `users`")
 
 	if err != nil {
 		return nil, err
@@ -44,7 +44,7 @@ func GetAllUsers() ([]*User, error) {
 
 // Create method to create a new user
 func (u *User) Create() error {
-	result, err := DB.Exec("INSERT INTO `graphql_users` (first_name, last_name, email, password, created_at, updated_at) VALUES(?, ?, ?, ?, ?, ?)", u.FirstName, u.LastName, u.Email, u.Password, time.Now(), time.Now())
+	result, err := DB.Exec("INSERT INTO `users` (first_name, last_name, email, password, created_at, updated_at) VALUES(?, ?, ?, ?, ?, ?)", u.FirstName, u.LastName, u.Email, u.Password, time.Now(), time.Now())
 
 	if err != nil {
 		return err

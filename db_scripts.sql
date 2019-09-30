@@ -1,16 +1,15 @@
 --
 --
--- CREATE DATABASE IF NOT EXISTS `graphql`;
+CREATE DATABASE IF NOT EXISTS `graphql`;
 
 USE `graphql`;
 
 --
--- Table structure for table `patients`
+-- Table structure for table `users`
 --
 
 DROP TABLE IF EXISTS `users`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(45) DEFAULT NULL,
@@ -21,4 +20,3 @@ CREATE TABLE `users` (
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
-/*!40101 SET character_set_client = @saved_cs_client */;

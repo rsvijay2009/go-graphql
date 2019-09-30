@@ -10,6 +10,8 @@ If you are wanting to build and develop this, you will need the following items 
 # Install the dependencies
 
 ```
+go get -u "github.com/rsvijay2009/go-graphql"
+
 go get -u "github.com/99designs/gqlgen/handler"
 
 go get -u "github.com/go-sql-driver/mysql"
